@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.array_string;
 
 public class DiagonalOrder {
 
@@ -8,19 +8,19 @@ public class DiagonalOrder {
 	private static final int R = 0;
 	
     public int[] findDiagonalOrder(int[][] matrix) {
-    	//¿Õ·µ»Ø
+    	//ï¿½Õ·ï¿½ï¿½ï¿½
     	if(matrix.length == 0) {
     		return new int[0];
     	}
     	
-    	//»ñÈ¡ÔªËØ×ÜÊý
+    	//ï¿½ï¿½È¡Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     	int sum = matrix.length * matrix[0].length;
     	int num = 0;
     	
-    	//½á¹û¼¯
+    	//ï¿½ï¿½ï¿½ï¿½ï¿½
     	int[] result = new int[sum];
     	
-    	//ÓÎ×ß
+    	//ï¿½ï¿½ï¿½ï¿½
     	int direction = RU;
     	int row = 0;
     	int col = 0;

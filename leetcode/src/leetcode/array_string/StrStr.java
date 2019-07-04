@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.array_string;
 
 public class StrStr {
 
