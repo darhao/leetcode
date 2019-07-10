@@ -1,4 +1,4 @@
-package leetcode.stack_queue;
+package leetcode.queue_stack;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -77,7 +77,7 @@ public class WallsAndGates {
 				List<Room> notVisitNeighborRooms = findNotVisitNeighbor(visitedRooms, room);
 				for (Room neighbor : notVisitNeighborRooms) {
 					if(rooms[neighbor.getRow()][neighbor.getCol()] == INF) {
-						//ÌîÈëµ±Ç°¾àÀë
+						//ï¿½ï¿½ï¿½ëµ±Ç°ï¿½ï¿½ï¿½ï¿½
 						rooms[neighbor.getRow()][neighbor.getCol()] = distance;
 						willVisitRooms.offer(neighbor);
 					}
@@ -93,16 +93,16 @@ public class WallsAndGates {
 		int currentRow = room.getRow();
 		int currentCol = room.getCol();
 		List<Room> neighbors = new ArrayList<>();
-		//ÕÒÉÏ·½
+		//ï¿½ï¿½ï¿½Ï·ï¿½
 		Room neighbor = new Room(currentRow - 1, currentCol);
 		addNeighbor(visitedRooms, neighbors, neighbor);
-		//ÕÒ×ó·½
+		//ï¿½ï¿½ï¿½ï¿½
 		neighbor = new Room(currentRow, currentCol - 1);
 		addNeighbor(visitedRooms, neighbors, neighbor);
-		//ÕÒÏÂ·½
+		//ï¿½ï¿½ï¿½Â·ï¿½
 		neighbor = new Room(currentRow + 1, currentCol);
 		addNeighbor(visitedRooms, neighbors, neighbor);
-		//ÕÒÓÒ·½
+		//ï¿½ï¿½ï¿½Ò·ï¿½
 		neighbor = new Room(currentRow, currentCol + 1);
 		addNeighbor(visitedRooms, neighbors, neighbor);
 		return neighbors;
