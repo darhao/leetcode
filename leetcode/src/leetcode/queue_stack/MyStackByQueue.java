@@ -1,4 +1,4 @@
-package leetcode.stack_queue;
+package leetcode.queue_stack;
 
 import java.util.LinkedList;
 import java.util.Queue;
