@@ -1,7 +1,5 @@
 package leetcode.linklist;
 
-import leetcode.linklist.IntersectionList.ListNode;
-
 public class ListNodeDeleter {
 
 	class ListNode {
