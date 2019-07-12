@@ -29,7 +29,7 @@ public class ArrayPairSum {
 		}
 		left = sort(left);
 		right = sort(right);
-		List temp = new ArrayList<>();
+		List<Integer> temp = new ArrayList<>();
 		int l = 0, r = 0;
 		while(l < left.length && r < right.length) {
 			if(left[l] <= right[r]) {
