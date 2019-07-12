@@ -54,5 +54,4 @@ public class IntersectionList {
 		}
 		return length;
 	}
-    
 }
