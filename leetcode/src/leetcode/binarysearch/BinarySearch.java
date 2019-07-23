@@ -9,21 +9,17 @@ public class BinarySearch {
     	int left = 0;
     	int right = nums.length - 1;
     	int mid;
-    	do{
-    		if(right - left == 1) {
-    			if(target == nums[left]) return left;
-    			if(target == nums[right]) return right;
-    			return -1;
-    		}
-    		mid = (left + right) / 2;
+    	while(left <= right) {
+    		mid = left + (right - left) / 2;
     		if(target == nums[mid]) {
     			return mid;
     		}else if(target < nums[mid]){
-    			right = mid;
+    			right = mid - 1;
     		}else if(target > nums[mid]){
-				left = mid;
+				left = mid + 1;
     		}
-    	}while(true);
+    	}
+		return -1;
     }
     
 }
